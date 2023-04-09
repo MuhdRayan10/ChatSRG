@@ -1,2 +1,2 @@
 # ChatSRG
- a bot that talks like people
+A bot that talks like people.
