@@ -46,6 +46,6 @@ print(f"Data Size {len(p_data)}")
 # no. of unique words
 print(f"Unique words {len(set(words))}")
 
-# save to file in ./data/processed/ with the same filename
-with open(f"./data/processed/{args.filepath.split('/')[-1]}", 'w') as f:
-    json.dump(p_data, f)
+# save to file in ./data/processed/ with the same filename as a text file
+with open(f"./data/processed/{(args.filepath.split('/')[-1]).split('.')[0]}.txt", 'w') as f:
+    f.write("\n".join(p_data))
